@@ -2,6 +2,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { HelloWorldApp } from './HelloWorldApp';
 import { FirstApp } from './FirstApp';
+import { CounterApp } from './CounterApp';
 
 // Import styles
 import './styles.css';
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     // It activates additional checks and warnings for its descendants.
     <StrictMode>
         {/* <HelloWorldApp /> */}
-        <FirstApp />
+        {/* <FirstApp title="Hola Soy Goku" subTitle={ 12341 }/> */}
+        <CounterApp value={ 1 }/>
     </StrictMode>
 );

@@ -10,11 +10,21 @@ export const CounterApp = ( { value } ) => {
         //setCounter( counter + 1 ); // cuando puede usar el valor anterior
     }
 
+    const handleSubstract = () => {
+        setCounter( (c) => c - 1 );
+    }
+
+    const handleReset = () => {
+        setCounter( value );
+    }
+
     return (
     <>
         <h1>CounterApp</h1>
         <h2> { counter } </h2>
         <button onClick={ handleAdd }> +1 </button>
+        <button onClick={ handleSubstract }> -1 </button>
+        <button onClick={ handleReset }> Reset </button>
     </>
     );
 }

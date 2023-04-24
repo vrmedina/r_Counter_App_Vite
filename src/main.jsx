@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     // It activates additional checks and warnings for its descendants.
     <StrictMode>
         {/* <HelloWorldApp /> */}
-        {/* <FirstApp title="Hola Soy Goku" subTitle={ 12341 }/> */}
-        <CounterApp value={ 1 }/>
+        <FirstApp title="Hola Es Titulo"/>
+        {/* <CounterApp value={ 1 }/> */}
     </StrictMode>
 );
